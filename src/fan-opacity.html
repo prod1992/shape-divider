@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fan Opacity</title>
+    <link rel="stylesheet" href="./css/basic.css" />
+    <style>
+      :root {
+        --shape-color-1: #2e3192;
+        --shape-color-2: #27aae1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="divider-wrapper">
+      <div
+        class="divider-shape divider-shape--top"
+        data-animation="scale"
+        data-animation-value="2"
+        data-animation-play-on="mouseenter"
+        data-animation-pause-on="mouseleave"
+        data-animation-duration="2000"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 283.5 19.6"
+          preserveAspectRatio="none"
+          height="200"
+          width="100%"
+        >
+          <defs>
+            <style>
+              .divider-shape--fill {
+                fill: url(#linear-gradient);
+              }
+            </style>
+            <linearGradient
+              id="linear-gradient"
+              x1="565.65"
+              y1="332.98"
+              x2="29.35"
+              y2="-41.98"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="var(--shape-color-1)" />
+              <stop offset="1" stop-color="var(--shape-color-2)" />
+            </linearGradient>
+          </defs>
+          <path
+            class="divider-shape--fill"
+            style="opacity:0.33"
+            d="M0 0L0 18.8 141.8 4.1 283.5 18.8 283.5 0z"
+          ></path>
+          <path
+            class="divider-shape--fill"
+            style="opacity:0.33"
+            d="M0 0L0 12.6 141.8 4 283.5 12.6 283.5 0z"
+          ></path>
+          <path
+            class="divider-shape--fill"
+            style="opacity:0.33"
+            d="M0 0L0 6.4 141.8 4 283.5 6.4 283.5 0z"
+          ></path>
+          <path
+            class="divider-shape--fill"
+            d="M0 0L0 1.2 141.8 4 283.5 1.2 283.5 0z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>

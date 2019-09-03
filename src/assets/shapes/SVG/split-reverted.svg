@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 316">
+  <defs>
+    <linearGradient id="a" x1="999.2" y1="-62.58" x2="150.29" y2="530.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <title>split-reverted</title>
+  <path d="M656,0l27,30L710,0l656,1V316H0V1Z" style="fill: url(#a)"/>
+</svg>

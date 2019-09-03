@@ -1,0 +1,33 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 608.68 386.98"
+>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient
+      id="linear-gradient"
+      x1="581.07"
+      y1="-39.49"
+      x2="-9.49"
+      y2="373.41"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#2e3192" />
+      <stop offset="1" stop-color="#27aae1" />
+    </linearGradient>
+  </defs>
+  <title>Asset 8</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <polygon
+        class="cls-1"
+        points="608.68 307.98 0 386.98 0 0 608.68 0 608.68 307.98"
+      />
+    </g>
+  </g>
+</svg>

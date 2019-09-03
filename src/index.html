@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Docs</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<style>
+    pre {
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 2px 2px 6px #00000026;
+    }
+</style>
+
+<body>
+    <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-section--heading">
+                        <h2>Guide</h2>
+                        <div class="my-5">
+                            <h5>Playing with colors, width, height</h5>
+                            <hr>
+                            <p>Colors can be changed in every .html file, on the top, where I placed a style html tag with css
+                                variables. If you mind to use only one color, just change the <code>fill</code> attribute of
+                                <span class="badge badge-secondary">.divider-shape--fill</span> class</p>
+<pre>
+:root {
+    &nbsp;&nbsp;&nbsp;--shape-color-1: #2E3192;
+    &nbsp;&nbsp;&nbsp;--shape-color-2: #27AAE1;
+}
+
+
+.divider-shape svg {
+    &nbsp;&nbsp;&nbsp;width: calc(100% + 1.3px);
+    &nbsp;&nbsp;&nbsp;height: {0-999}px; 
+}</pre>
+                        </div>
+                        <div class="my-5">
+                            <h5>Apply flip, invert</h5>
+                            <hr>
+                            <p>
+                                We apply flip/invert effects using appropriate classnames:
+                                <br>
+                                <br>
+                                <h5><span class="badge badge-primary">.divider-shape--flip</span></h5>
+                                <h5><span class="badge badge-primary">.divider-shape--invert</span></h5>
+                                <br>
+                                <br>
+                                If the shape has <span class="badge badge-warning">flippable</span> / <span
+                                    class="badge badge-dark">invertable</span> badge on it, you can add the classnames mentioned
+                                upper accordingly. Classnames should be added to the <span
+                                    class="badge badge-primary">.divider-shape</span>
+                                <br>
+                                <br>
+                                <pre>div class="divider-shape <span class="text-danger">divider-shape--flip</span>"</pre>
+                                <pre>div class="divider-shape <span class="text-danger">divider-shape--invert</span>"</pre>
+                            </p>
+                            <p>In case, in result, the shape needs to be rotated 180deg, we can add
+                                [negative="true"] attribute to our <span class="badge badge-primary">.divider-shape</span>
+                                element.</p>
+                            <pre>div class="divider-shape <span class="text-danger">divider-shape--invert</span>" negative<span class="text-danger">="true"</span></pre>
+                        </div>
+                    </div>
+                    <ul class="divider-guide--ul">
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Waves</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/waves.png" alt="Tilt" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./waves.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Fan Opacity</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <!-- <li class="m-1"><span class="badge badge-dark">invertable</span></li> -->
+                                        </ul>
+                                        <img src="./assets/img/fan-opacity.png" alt="fan-opacity" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./fan-opacity.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Triangle</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/triangle.png" alt="Triangle" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./triangle.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Tilt Opacity</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <!-- <li class="m-1"><span class="badge badge-dark">invertable</span></li> -->
+                                        </ul>
+                                        <img src="./assets/img/tilt-opacity.png" alt="tilt-opacity" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./tilt-opacity.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Drops</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/drops.png" alt="Drops" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./drops.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Curve</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/curve.png" alt="curve" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./curve.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+        
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Waves Brush</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/waves-brush.png" alt="Waves Brush" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./waves-brush.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Pyramids</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/pyramids.png" alt="pyramids" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./pyramids.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Tilt</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/tilt.png" alt="Tilt" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./tilt.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Triangle Assymetrical</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/triangle-assymetrical.png" alt="Triangle Assymetrical"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./triangle-assymetrical.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Waves Pattern</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/waves-pattern.png" alt="waves-pattern" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./waves-pattern.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Book</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/book.png" alt="book" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./book.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+        
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Clouds</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/clouds.png" alt="Clouds" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./clouds.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Zigzag</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/zigzag.png" alt="zigzag" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./zigzag.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Mountains</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/mountains.png" alt="mountains" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./mountains.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Curve Assymetrical</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-warning">flippable</span></li>
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/curve-assymetrical.png" alt="curve-assymetrical.png"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./curve-assymetrical.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row align-items-start">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="m-0">Split</h5>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between">
+                                        <ul class="list-unstyled d-flex align-self-end">
+                                            <li class="m-1"><span class="badge badge-dark">invertable</span></li>
+                                        </ul>
+                                        <img src="./assets/img/split.png" alt="Split" class="img-fluid">
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <a class="card-link" href="./split.html">See HTML </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12"><hr></div>
+                <div class="col-12">
+                    <div class="page-section--heading">
+                        <h2>Animations</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <h5>Scale Animation</h5>
+                            <p>  
+                                to use this type of animation, please add the following attributes to the <span class="badge badge-secondary">.divider-shape</span>
+<pre>
+    &#60;div
+        class="divider-shape divider-shape--top divider-shape--inverted"<span class="text-danger">
+        data-animation="scale"
+        data-animation-value="2"
+        data-animation-play-on="mouseenter"
+        data-animation-pause-on="mouseleave"
+        data-animation-duration="1500"</span>
+    
+</pre>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

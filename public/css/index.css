@@ -1,0 +1,51 @@
+.container {
+	max-width: 992px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page-section {
+	padding: 50px 0;
+}
+
+.page-section--heading {
+	margin: 30px 0 50px;
+}
+
+.divider-type--title h3 {
+	margin: 0;
+}
+
+.divider-guide--ul {
+	padding: 0 15px;
+}
+
+.divider-guide--ul .img-fluid {
+	max-width: 200px;
+	border: 1px solid #eeeeee;
+}
+
+.divider-guide--ul>li {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	list-style: none;
+}
+
+.divider-guide--ul {
+	line-height: 1.6;
+}
+
+.divider-guide--ul .badge.classname {
+	background-color: #ff8400cc;
+	color: #ffffff;
+}
+
+.divider-guide--ul .badge .badge,
+.divider-guide--ul .badge .badge .badge,
+.divider-guide--ul .badge .badge .badge .badge {
+	font-size: 100%;
+}
+
+.divider-badges--list li {
+	margin: 5px;
+}
